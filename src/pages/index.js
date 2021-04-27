@@ -7,7 +7,7 @@ const seo = {
 const Index = (props) => {
   return(
     <>
-      Soy una pagina en blanco
+      Soy una pagina en blanco 🎃
     </>
   )
 }
