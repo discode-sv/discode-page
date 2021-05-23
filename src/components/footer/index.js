@@ -1,9 +1,8 @@
 import React from 'react';
 import { FooterContainer, FooterComponent, FooterBlog, FooterLogo, FooterButton, FooterCopy, FooterOla } from './style-footer';
-import discord_contact from '../../assets/img/discord-contact.png';
-import logo_tw from "../../assets/img/logo_tw.png";
-import img_blog from "../../assets/img/img-blog.jpg";
-import ola from "../../assets/img/FooterVector.png"
+import discord_contact from '../../images/discord-contact.png';
+import logo_tw from "../../images/logo_tw.png";
+import ola from "../../images/FooterVector.png"
 
 const Footer = () => {
     return (

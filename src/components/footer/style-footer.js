@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logoDiscodeRemove from '../../assets/img/logo_discode-removebg.png';
+import logoDiscodeRemove from '../../images/logo_discode-removebg.png';
 
 export const FooterContainer = styled.footer`
     position: relative;
