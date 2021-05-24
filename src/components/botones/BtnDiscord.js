@@ -14,15 +14,15 @@ const Btn = styled.button`
 `
 const P = styled.p`
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: 1.7rem;
+    font-weight: 800;
+    font-size: 1.6rem;
 `
 const I = styled.i`
     font-size: 2rem;
 `
 
 const BtnDiscord = () => {
-    return ( 
+    return (
         <Btn>
             <P><I className="fab fa-discord"></I> ¡Unite a nuestro Discord!</P>
         </Btn>
