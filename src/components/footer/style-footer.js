@@ -3,15 +3,10 @@ import logoDiscodeRemove from '../../images/logo_discode-removebg.png';
 
 export const FooterContainer = styled.footer`
     position: relative;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 320px;
     background-color: #373737;
     color: #FFFFFF;
-    padding: 50px 30px;
-
+    margin-top: 200px;
+    // Logo de Discode en el background
     &:before {
         content: ' ';
         display: block;
@@ -26,26 +21,72 @@ export const FooterContainer = styled.footer`
         background-position: 120% -30%;
         background-size: 600px;
     }
+    @media (max-width: 960px) {
+        &:before {
+            background-position: 140% 185%;
+        }
+    }
+    @media (max-width: 660px) {
+        &:before {
+            background-position: 120% 150%;
+        }
+    }
 `;
 
 export const FooterComponent = styled.section`
-    position: relative;
-    grid-area: 1 / 1 / 2 / 5;
 
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 50px 30px 0 30px;
 
     section{
-        max-width: 270px;
+        max-width: 300px;
+        min-width: 150px;
+        @media (max-width: 1030px) {
+            width: 300px;
+        }
     }
     h3{
-        font-size: 1.5em;
-        font-weight: bold;
+        font-size: 1.4em;
+        font-weight: 800;
+    }
+    .texto{
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    p{
+        font-size: 0.9em;
+        font-weight: 500;
     }
     ul{
         li{
-            margin-top: 10px;
+            margin-top: 3px;
+        }
+    }
+    @media (max-width: 1030px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+`;
+
+export const FooterContact = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
+    .logo{
+        width: 35px;
+        img{
+            cursor: pointer;
+            width: 100%;
+            filter: grayscale(100%);
+            &:hover {
+                filter: grayscale(0%);
+            }
         }
     }
 `;
@@ -54,12 +95,15 @@ export const FooterBlog = styled.article`
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    img{
-        height: 90px;
-        width: 75px;
-        background-color: #C4C4C4;
-    }
     div{
+        width: 75px;
+        img{
+            height: 90px;
+            width: 75px;
+            background-color: #C4C4C4;
+        }
+    }
+    .textBlog{
         width:auto;
         p{
             margin: 0 0 10px 10px;
@@ -72,56 +116,54 @@ export const FooterBlog = styled.article`
     }
 `;
 
-export const FooterLogo = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    .logo{
-        width: 40px;
-        img{
-            cursor: pointer;
-            width: 100%;
-            filter: grayscale(100%);
-            &:hover {
-                filter: grayscale(0%);
-            }
-        }
-    }
-    .logo:nth-child(2) {
-        padding-top: 5px;
-    }
-`;
-
 export const FooterButton = styled.button`
     padding: 5px;
-    background-color: #496BE3;
-    border: 1px solid #496BE3;
+    border: 1px solid #7289DA;
     border-radius: 5px;
+    background-color: #7289DA;
     color: #FFFFFF;
     font-weight: bold;
+    &:hover{
+        background-color: #667fda;
+    }
 `;
 
 export const FooterCopy = styled.section`
-    grid-area: 2 / 1 / 3 / 5;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-
     position: relative;
 
-    .copy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "a b c";
+
+    width: 100%;
+    font-size: 0.8em;
+    padding: 0 15px;
+
+    .copy1{
+        grid-area: a;
+    }
+    .copy2{
+        grid-area: b;
+        text-align: center;
         font-weight: bold;
     }
 `;
 
 export const FooterOla = styled.div`
-    position: absolute;
     width:100%;
-    top: -49px;
+    background-color: #fff;
     img{
-        width:100%;
+        position: relative;
+        left: 0;
+        @media (min-width: 1200px) {
+            width: 100%;
+        }
+        @media (max-width: 700px) {
+            width: none;
+            max-width: none;
+        }
     }
 `;
