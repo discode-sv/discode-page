@@ -5,12 +5,12 @@ import logo_tw from "../../images/logo_tw.png";
 import ola from "../../images/FooterVector.png"
 
 
-const Blog_post = props => {
+const BlogPost = props => {
     return (
         <div className="texto">
             <FooterBlog>
                 <div>
-                    <img src={props.img} />
+                    <img src={props.img} alt='Blog' />
                 </div>
                 <div className="textBlog">
                     <p>{props.texto}</p>
@@ -25,7 +25,7 @@ const Blog_post = props => {
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterOla><img src={ola} /></FooterOla>
+            <FooterOla><img src={ola} alt='Wave' /></FooterOla>
             <FooterComponent>
                 <section>
                     <h3>Discode</h3>
@@ -34,10 +34,10 @@ const Footer = () => {
 
                         <FooterContact>
                             <a href="/home/" className="logo">
-                                <img src={discord_contact} />
+                                <img src={discord_contact}  alt='Discord' />
                             </a>
                             <a href="/home/" className="logo">
-                                <img src={logo_tw} />
+                                <img src={logo_tw} alt='Twitter' />
                             </a>
                         </FooterContact>
                     </div>
@@ -54,13 +54,13 @@ const Footer = () => {
                     <div className="texto">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="https://discode-sv.vercel.app/">Home</a>
                             </li>
                             <li>
-                                <a href="#">Blog</a>
+                                <a href="https://discode-sv.vercel.app/">Blog</a>
                             </li>
                             <li>
-                                <a href="#">Eventos</a>
+                                <a href="https://discode-sv.vercel.app/">Eventos</a>
                             </li>
                         </ul>
                     </div>
@@ -68,12 +68,12 @@ const Footer = () => {
 
                 <section>
                     <h3>Ultimas Actualizaciónes</h3>
-                    <Blog_post
+                    <BlogPost
                         img="#"
                         texto="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                         fecha="Abril 15-2021"
                     />
-                    <Blog_post
+                    <BlogPost
                         img="#"
                         texto="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                         fecha="Abril 15-2021"
