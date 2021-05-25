@@ -155,6 +155,7 @@ export const FooterCopy = styled.section`
 export const FooterOla = styled.div`
     width:100%;
     background-color: #fff;
+    overflow: hidden;
     img{
         position: relative;
         left: 0;
