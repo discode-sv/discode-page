@@ -1,32 +1,34 @@
-import React from 'react';
+import React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 const Btn = styled.button`
-    margin-top: 1.5rem;
-    background-color: #7289DA;
-    border: none;
-    width: 24rem;
-    height: 4rem;
-    border-radius: 3px;
-    &:hover{
-        background-color: #667fda;
-    }
-`
+	margin-top: 1.5rem;
+	background-color: #7289da;
+	border: none;
+	width: 24rem;
+	height: 4rem;
+	border-radius: 3px;
+	&:hover {
+		background-color: #667fda;
+	}
+`;
 const P = styled.p`
-    color: #FFFFFF;
-    font-weight: 800;
-    font-size: 1.6rem;
-`
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.6rem;
+`;
 const I = styled.i`
-    font-size: 2rem;
-`
+	font-size: 2rem;
+`;
 
 const BtnDiscord = () => {
-    return (
-        <Btn>
-            <P><I className="fab fa-discord"></I> ¡Unite a nuestro Discord!</P>
-        </Btn>
-    );
-}
+	return (
+		<Btn>
+			<P>
+				<I className='fab fa-discord'></I> ¡Unite a nuestro Discord!
+			</P>
+		</Btn>
+	);
+};
 
 export default BtnDiscord;
